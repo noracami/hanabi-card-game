@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: hanabi_card_game_production
-  username: hanabi_card_game
+  database: <%= ENV["HANABI_CARD_GAME_DATABASE"] %>
+  username: <%= ENV["HANABI_CARD_GAME_DATABASE_USERNAME"] %>
   password: <%= ENV["HANABI_CARD_GAME_DATABASE_PASSWORD"] %>
