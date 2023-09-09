@@ -82,5 +82,7 @@ test:
 production:
   <<: *default
   database: <%= ENV["HANABI_CARD_GAME_DATABASE"] %>
-  username: <%= ENV["HANABI_CARD_GAME_DATABASE_USERNAME"] %>
-  password: <%= ENV["HANABI_CARD_GAME_DATABASE_PASSWORD"] %>
+  host: <%= ENV["POSTGRES_HOST"] %>
+  username: <%= ENV["POSTGRES_USERNAME"] %>
+  password: <%= ENV["POSTGRES_PASSWORD"] %>
+  port: <%= ENV["POSTGRES_PORT"] %>
