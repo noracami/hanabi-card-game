@@ -23,8 +23,11 @@ default: &default
 
 development:
   <<: *default
-  database: hanabi_card_game_development
-
+  database: <%= ENV["HANABI_CARD_GAME_DATABASE"] %>
+  host: <%= ENV["POSTGRES_HOST"] %>
+  username: <%= ENV["POSTGRES_USERNAME"] %>
+  password: <%= ENV["POSTGRES_PASSWORD"] %>
+  port: <%= ENV["POSTGRES_PORT"] %>
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
