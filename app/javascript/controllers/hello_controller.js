@@ -1,6 +1,9 @@
 import { Controller } from "@hotwired/stimulus";
-import room_channel from "../channels/room_channel";
-import { receivedFromUser, receivedFromWorld } from "./receive_wrapper";
+import room_channel from "channels/room_channel";
+import {
+  receivedFromUser,
+  receivedFromWorld,
+} from "controllers/receive_wrapper";
 
 export default class extends Controller {
   static targets = ["title"];
