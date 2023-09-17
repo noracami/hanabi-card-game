@@ -8,7 +8,11 @@
 
 - Rails
 
+  - Action Cable
+
 - PostgreSQL
+
+- Redis
 
 - tailwindCSS
 
